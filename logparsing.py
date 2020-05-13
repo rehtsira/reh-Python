@@ -1,5 +1,5 @@
 import os, re #loads the os and regex module
-import smtplib #loads smtplib for the extra credit bit 
+import smtplib #loads smtplib
 from email.message import EmailMessage
 import ssl
 
@@ -94,7 +94,7 @@ def send_email(textfile): #function to send an email to an inputted recipient us
     readme = thefile.read()
     message.add_attachment(readme, filename="hah.txt")
     smtp_server = smtplib.SMTP_SSL("smtp.gmail.com",465,context=context)
-    smtp_server.login('your-email-here' , <totallycleartextpassword>)
+    smtp_server.login('your-email-here' , 'your-password-here')
     smtp_server.send_message(message)
 mayday()
 send_email(faileduserlist())
