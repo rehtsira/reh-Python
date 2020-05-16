@@ -13,7 +13,7 @@ def new_mac():
         return new_
 
 print(os.system("ifconfig eth0 | grep ether | grep -oE [0-9abcdef:]{17}")) #get current MAC Address
-#--current-MAC: 9c:ef:d5:fd:dc:97
+
 subprocess.call(["sudo","ifconfig","eth0","down"])
 
 new_m = new_mac()
