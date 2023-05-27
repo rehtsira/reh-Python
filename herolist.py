@@ -1,3 +1,4 @@
+#Playing with lists
 import sys, copy
 
 heroes = ['Superman', 'Batman', 'Flash']
