@@ -1,4 +1,5 @@
-import tkinter, random
+import tkinter as tk
+import random
 import tkinter.messagebox
 from time import time
 from time import ctime
